@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>入职欢迎邮件</title>
+</head>
+<body>
+欢迎<span th:text="${empName}"></span>加入xxx公司，您的入职信息如下,请一一核对：
+<table border="1px">
+    <tr>
+        <tb>姓名</tb>
+        <tb th:text="${empName}"></tb>
+    </tr>
+    <tr>
+        <tb>职位</tb>
+        <tb th:text="${positionName}"></tb>
+    </tr>
+    <tr>
+        <tb>职称</tb>
+        <tb th:text="${jobLevelName}"></tb>
+    </tr>
+    <tr>
+        <tb>部门</tb>
+        <tb th:text="${departmentName}"></tb>
+    </tr>
+
+</table>
+
+<p>希望在未来的日子里，携手共进！</p>
+
+</body>
+</html>
